@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="stylesheet" href="用户注册认证.css">
+  <meta charset="UTF-8">
+  <title>用户注册认证</title>
+</head>
+<body>
+
+
+
+<!--nav 是default的界面-->
+<nav>
+  <div id="logo"><img src="PuzzleLogo.png" width="50px" height="50px">PUZZLE</div>
+
+  <ul class="menu">
+    <li><a href="#">首页</a></li>
+    <li>
+      <!-- First Tier Drop Down -->
+      <a href="#">注册</a>
+      <ul>
+        <li><a href="#">用户注册</a></li>
+        <li><a href="#">企业注册</a></li>
+        <li><a href="#">管理员注册</a></li>
+      </ul>
+    </li>
+    <li>
+
+      <!-- Second Tier Drop Down -->
+      <a href="#">登录</a>
+      <ul>
+        <li><a href="#">用户登录</a></li>
+        <li><a href="#">企业登录</a></li>
+        <li><a href="#">管理员登录</a></li>
+      </ul>
+    </li>
+
+    <li><a href="#">联络我们</a></li>
+    <li><a href="#">关于我们</a></li>
+  </ul>
+</nav>
+
+<div class="footer">
+  <h2>Puzzle团队合作生产@copyright</h2>
+</div>
+
+<!--用户注册-->
+<div class="container">
+  <div class="register-box">
+    <div class="title-box">
+      <span>用户注册认证</span>
+    </div>
+    <form method="post" action="/action_page.php">
+
+      <!--用户名-->
+      <div class="username-box">
+        <label for="username">用户名</label>
+        <div class="username-input">
+          <input type="text" id="username" name="username" placeholder="请输入用户名 长度:6-12个字符" />
+        </div>
+      </div>
+
+      <!--密码-->
+      <div class="userPassword-box">
+        <label for="userPassword">密码</label>
+        <div class="userPassword-input">
+          <input type="password" id="userPassword" name="userPassword" placeholder="请输入密码 长度:6-12个字符" />
+        </div>
+      </div>
+
+      <!--确认密码-->
+      <div class="userRePassword-box">
+        <label for="userRePassword">确认密码</label>
+        <div class="userRePassword-input">
+          <input type="password" id="userRePassword" name="userRePassword" placeholder="请重复输入密码" />
+        </div>
+      </div>
+
+      <!--姓名-->
+      <div class="name-box">
+        <label for="name">姓名</label>
+        <div class="name-input">
+          <input type="text" id="name" name="name" placeholder="请输入姓名" />
+        </div>
+      </div>
+
+      <!--性别-->
+      <div class="userGender-box">
+        <label>性别</label>
+        <div class="userGender-input">
+          <input type="radio" id="userGender_01" name="userGender" value="0" checked="checked" />男
+          <input type="radio" id="userGender_02" name="userGender" value="1" />女
+        </div>
+      </div>
+
+      <!--电话号码-->
+      <div class="userPhone-box">
+        <label for="userPhone">手机号码</label>
+        <div class="userPhone-input">
+          <input type="text" id="userPhone" name="userPhone" placeholder="请输入您的手机号码，11位有效数字" />
+        </div>
+      </div>
+
+      <!--电子邮箱-->
+      <div class="userEmail-box">
+        <label for="userEmail">电子邮箱</label>
+        <div class="userEmail-input">
+          <input type="email" id="userEmail" name="userEmail" placeholder="请输入您的邮箱地址，如：123@qq.com" />
+        </div>
+      </div>
+
+      <!--身份证-->
+      <div class="identity-box">
+        <label for="identity">身份证</label>
+        <div class="identity-input">
+          <input type="text" id="identity" name="identity" placeholder="请输入身份证号码" />
+        </div>
+      </div>
+
+<!--
+      最高学习经历
+      <div class="date-box">
+        <label for="date">学习经历</label>
+        <div class="date-input">
+          <input type="date"  id="date" name="date"/>
+        </div>
+      </div>
+
+      就读学校
+      <div class="school-box">
+        <label for="school">就读</label>
+        <div class="school-input">
+          <input type="text" id="school" name="school" placeholder="请输入就读过的学校" />
+        </div>
+      </div>
+
+      学历证明
+      <div class="upload-box">
+        <input type="file" id="upload" name="upload"/>
+      </div>
+
+      -->
+      <!--注册（点击确认）-->
+      <div class="submit-box">
+        <input id = "submit-button" type="submit" value="确认提交">
+      </div>
+
+      <!--已注册，去登录-->
+      <div class="goLogin-box">
+        <a href="#" style="text-decoration: none; color: white">已有账号？去登录</a>
+      </div>
+    </form>
+  </div>
+</div>
+
+
+
+
+</body>
+</html>

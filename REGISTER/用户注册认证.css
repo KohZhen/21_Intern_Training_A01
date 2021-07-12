@@ -1,0 +1,406 @@
+/* CSS Document */
+
+.container{
+    width: 100%;
+}
+
+/*用户注册的大框*/
+.register-box{
+    position: relative;
+    width: 800px;
+    top: 95px;
+    margin: auto; /*可以调整为auto就回去中间了*/
+    background:white;
+}
+/*用户注册的字框*/
+.title-box{
+    position: absolute;
+    width: 300px;
+    height: 50px;
+    margin-left: 200px;
+    margin-top: 5px;
+    text-align: center;
+    font-size: 28px;
+    font-weight: 800;
+    color: white;
+    line-height: 50px;
+}
+
+/*用户名 box*/
+.username-box{
+    position: absolute;
+    width: 420px;
+    height: 40px;
+    line-height: 40px;
+    margin-top:100px;
+    margin-left:80px;
+    font-weight: 700;
+}
+/*用户框 input*/
+.username-input{
+    display: inline-block;
+    margin-left: 50px;
+    /*background: green;*/
+}
+/*#是输入框的调整*/
+#username{
+    height: 35px;
+    width: 290px;
+    border-radius: 5px;
+    border: 2px solid white;
+}
+
+.userPassword-box{
+    position: absolute;
+    width: 420px;
+    height: 40px;
+    line-height: 40px;
+    margin-top:150px; /*这里的margin top 差40 可以调和完美，是每一个box的都可以*/
+    margin-left:80px;
+    font-weight: 700;
+}
+/*密码框 input*/
+.userPassword-input{
+    display: inline-block;
+    margin-left: 72px;
+}
+/*#是输入框的调整*/
+#userPassword{
+    height: 35px;
+    width: 290px;
+    border: 2px solid white;
+    border-radius: 5px;
+}
+
+.userRePassword-box{
+    position: absolute;
+    width: 420px;
+    height: 40px;
+    line-height: 40px;
+    margin-top:200px;
+    margin-left:80px;
+    font-weight: 700;
+}
+/*确认密码框 input*/
+.userRePassword-input{
+    display: inline-block;
+    margin-left: 28px;
+}
+/*#是输入框的调整*/
+#userRePassword{
+    height: 35px;
+    width: 290px;
+    border: 2px solid white;
+    border-radius: 5px;
+}
+
+/*姓名 box*/
+.name-box{
+    position: absolute;
+    width: 420px;
+    height: 40px;
+    line-height: 40px;
+    margin-top:250px;
+    margin-left:80px;
+    font-weight: 700;
+}
+/*姓名框 input*/
+.name-input{
+    display: inline-block;
+    margin-left: 72px;
+    /*background: green;*/
+}
+#name{
+    height: 35px;
+    width: 290px;
+    border-radius: 5px;
+    border: 2px solid white;
+}
+
+/*性别 box*/
+.userGender-box{
+    position: absolute;
+    width: 420px;
+    height: 40px;
+    line-height: 40px;
+    margin-top:300px;
+    margin-left:82px;
+    font-weight: 700;
+}
+/*性别框 input*/
+.userGender-input{
+    display: inline-block;
+    margin-left: 62px;
+}
+
+/*民族 box*/
+.identity-box{
+    position: absolute;
+    width: 420px;
+    height: 40px;
+    line-height: 40px;
+    margin-top:350px;
+    margin-left:80px;
+    font-weight: 700;
+}
+/*民族 input*/
+.identity-input{
+    display: inline-block;
+    margin-left: 50px;
+    /*background: green;*/
+}
+#identity{
+    height: 35px;
+    width: 290px;
+    border-radius: 5px;
+    border: 2px solid white;
+}
+
+/*手机号 box*/
+.userPhone-box{
+    position: absolute;
+    width: 420px;
+    height: 40px;
+    line-height: 40px;
+    margin-top:400px;
+    margin-left:80px;
+    font-weight: 700;
+}
+/*手机号码框input*/
+.userPhone-input{
+    display: inline-block;
+    margin-left: 28px;
+}
+/*#是输入框的调整*/
+#userPhone{
+    height: 35px;
+    width: 290px;
+    border: 2px solid white;
+    border-radius: 5px;
+}
+
+/*电子邮件 box*/
+.userEmail-box{
+    position: absolute;
+    width: 420px;
+    height: 40px;
+    line-height: 40px;
+    margin-top:450px;
+    margin-left:80px;
+    font-weight: 700;
+}
+/*电子邮箱框input*/
+.userEmail-input{
+    display: inline-block;
+    margin-left: 28px;
+}
+/*#是输入框的调整*/
+#userEmail{
+    height: 35px;
+    width: 290px;
+    border: 2px solid white;
+    border-radius: 5px;
+}
+
+
+/*
+学习经历box
+.date-box{
+    position: absolute;
+    width: 420px;
+    height: 40px;
+    line-height: 40px;
+    margin-top:505px;
+    margin-left:80px;
+    font-weight: 700;
+}
+
+学习经历 input
+.date-input{
+    display: inline-block;
+    margin-left: 28px;
+    /*background: green;
+}
+#date{
+    height: 35px;
+    width: 135px;
+    border-radius: 5px;
+    border: 2px solid white;
+}
+就读box
+.school-box{
+    position: absolute;
+    width: 420px;
+    height: 40px;
+    line-height: 40px;
+    margin-top:550px;
+    margin-left:80px;
+    font-weight: 700;
+}
+就读框input
+.school-input{
+    display: inline-block;
+    margin-left: 72px;
+    /*background: green;
+}
+#school{
+    height: 35px;
+    width: 290px;
+    border-radius: 5px;
+    border: 2px solid white;
+}
+
+
+
+学历证明box
+.upload-box{
+    position: absolute;
+    width: 420px;
+    height: 40px;
+    line-height: 40px;
+    margin-top:590px;
+    margin-left:205px;
+    font-weight: 700;
+}
+*/
+
+
+/*---确认框box---*/
+.submit-box{
+    position:absolute;
+    width: 80px;
+    height: 40px;
+    margin-top: 505px;
+    margin-left:200px;
+    border-radius: 5px;
+    border: 1px solid black;
+}
+/*---#是输入框的调整---*/
+#submit-button{
+    display: inline-block;
+    width: 80px;
+    height: 40px;
+    background: white;
+    border: 2px solid black;
+    border-radius: 1cm;
+}
+
+/*已经注册*/
+.goLogin-box{
+    position:absolute;
+    width: 300px;
+    height: 20px;
+    margin-top: 510px;
+    margin-left:300px;
+    color: white;
+}
+
+/*------下面开始就是default的东西------*/
+
+/*default and needed every places*/
+body {
+    background: #212121;
+    font-size: 22px;
+    line-height: 32px;
+    color: #ffffff;
+    margin: 0;
+    padding: 0;
+    word-wrap: break-word !important;
+}
+
+/* Giving a background-color to the nav container. 给一个颜色给一个框*/
+nav {
+    margin: 0;
+    padding: 0;
+    background-color: #254441;
+}
+
+#logo {
+    display: block;
+    padding: 0 30px;
+    float: left;
+    font-size: 50px;
+    line-height: 50px;
+}
+
+/* Since we'll have the "ul li" "float:left"
+ * we need to add a clear after the container. */
+
+nav:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Removing padding, margin and "list-style" from the "ul",
+ * and adding "position:relative" */
+nav ul {
+    float: right;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    position: relative;
+}
+
+/* Positioning the navigation items inline */
+nav ul li {
+    margin: 0;
+    display: inline-block;
+    float: left;
+    background-color: #254441;
+}
+
+/* Styling the links */
+nav a {
+    display: block;
+    padding: 14px 20px;
+    color: white;
+    font-size: 17px;
+    text-decoration: none;
+}
+
+/* Background color change on Hover 鼠标动的地方会变色*/
+nav a:hover {
+    background-color: black;
+}
+
+/* Hide Dropdowns by Default
+ * and giving it a position of absolute 让选项藏起来*/
+nav ul ul {
+    display: none;
+    position: absolute;
+    /* has to be the same number as the "line-height" of "nav a" */
+    top: 60px;
+}
+
+/* Display Dropdowns on Hover  选项 */
+nav ul li:hover > ul {
+    display: inherit;
+}
+
+/* First Tier Dropdown */
+nav ul ul li {
+    width: 150px;
+    float: none;
+    display: list-item;
+    position: relative;
+}
+
+/* Change ' +' in order to change the Dropdown symbol 增加symbol来表明有子式*/
+li > a:after {
+    content: ' + ';
+}
+li > a:only-child:after {
+    content: '';
+}
+
+/* 底部 */
+.footer {
+    text-align: center;
+    background: #254441;
+    width: 100%;
+    position: fixed;
+    padding: 10px 10px 00px 10px;
+    bottom: 0;
+}
+

@@ -1,4 +1,14 @@
-/*default nav*/
+/* CSS Document */
+
+body {
+    background: #212121;
+    font-size:22px;
+    line-height: 32px;
+    color: #ffffff;
+    margin: 0;
+    padding: 0;
+    word-wrap:break-word !important;
+}
 
 /* Giving a background-color to the nav container. 给一个颜色给一个框*/
 nav {
@@ -82,63 +92,13 @@ nav ul ul li {
 li > a:after { content:  ' + '; }
 li > a:only-child:after { content: ''; }
 
-/*login*/
-/*body needed to copy to default*/
-body {
-    background: #212121;
-    font-size:22px;
-    line-height: 32px;
-    color: #ffffff;
-    margin: 0;
-    padding: 0;
-    word-wrap:break-word !important;
-}
-
-.Enterprise{
-    background-color: white;
-    width: 400px;
-    margin: auto;
-    margin-top: 200px;
-    color: black;
-    font-family: KaiTi;
-    padding: 40px;
-    box-shadow: 10px 10px 25px black;
+/* 底部 */
+.footer {
     text-align: center;
-    border-radius: 1cm;
-}
-.Enterprise input{
-    display: block;
-    margin: 20px auto;
-    text-align: center;
-    background: none;
-    padding: 12px;
-    font-size: 15px;
-    border-radius: 22px;
-    outline: none;
-    color: black;
+    background: #254441;
+    width: 100%;
+    position: fixed;
+    padding: 10px 10px 0px 10px;
+    bottom: 0;
 }
 
-.Enterprise input[type="text"], .Enterprise input[type="password"]{
-    border:2px solid black;
-    width: 220px;
-}
-
-.Enterprise input[type="submit"]{
-    width: 150px;
-    border: 2px solid lightskyblue;
-    cursor: pointer;
-}
-
-.Enterprise input[type="text"]:focus{
-    border-color: lightskyblue;
-    width: 280px;
-    transition: 0.5s;
-}
-.Enterprise input[type="password"]:focus {
-    border-color: lightskyblue;
-    width: 280px;
-    transition: 0.5s;
-}
-.Enterprise input[type="submit"]:hover{
-    background-color: lightskyblue;
-}
