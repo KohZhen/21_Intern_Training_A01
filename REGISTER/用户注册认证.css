@@ -386,6 +386,35 @@ nav ul ul li {
     position: relative;
 }
 
+
+
+.navbarleft a {
+    display:block;
+    padding:20px 10px;
+    color:white;
+    font-size:17px;
+    text-decoration:none;
+}
+
+.navbarleft ul{
+    list-style: none;
+}
+
+.navbarleft{
+    position: fixed;
+    background: #254441;
+    width: 200px;
+    height: 1080px;
+    float: left;
+}
+
+.navbarleft ul :hover{
+    width: 100px;
+    background: black;
+    position: relative
+}
+
+
 /* Change ' +' in order to change the Dropdown symbol 增加symbol来表明有子式*/
 li > a:after {
     content: ' + ';
