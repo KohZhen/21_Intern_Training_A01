@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>HR页面</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+
+    /*搜索按钮靠左置中*/
+    .search{
+      margin:12px;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    /* body 样式 */
+    body {
+      font-family: Arial;
+      margin: 0;
+    }
+
+    /* 标题 */
+    .header {
+      padding: 30px;
+      text-align: center;
+      background: #FFFFFF;
+      color: white;
+    }
+
+    /* 标题字体加大 */
+    .header h1 {
+      font-size: 40px;
+    }
+
+    /* 导航 */
+    .navbar {
+      overflow: hidden;
+      background-color: #333;
+    }
+
+    /* 导航栏样式 */
+    .navbar a {
+      float: left;
+      display: block;
+      color: white;
+      text-align: center;
+      padding: 14px 20px;
+      text-decoration: none;
+    }
+
+    /* 右侧链接*/
+    .navbar a.right {
+      float: right;
+    }
+
+    /* 鼠标移动到链接的颜色 */
+    .navbar a:hover {
+      background-color: #87CEFA;
+      color: black;
+    }
+
+    /* 列容器 */
+    .row {
+      display: -ms-flexbox; /* IE10 */
+      display: flex;
+      -ms-flex-wrap: wrap; /* IE10 */
+      flex-wrap: wrap;
+    }
+
+    /* 边栏 */
+    .side {
+      -ms-flex: 10%; /* IE10 */
+      flex: 10%;
+      background-color: #f1f1f1;
+      padding: 10px;
+    }
+
+    /* 主要的内容区域 */
+    .main {
+      -ms-flex: 90%; /* IE10 */
+      flex: 90%;
+      background-color: white;
+      padding: 20px;
+    }
+
+    /* 测试图片 */
+    .fakeimg {
+      background-color: #aaa;
+      width: 100%;
+      padding: 20px;
+    }
+
+    /* 底部 */
+    .footer {
+      padding: 20px;
+      text-align: center;
+      background: grey;
+    }
+
+    /* 响应式布局 - 在屏幕设备宽度尺寸小于 700px 时, 让两栏上下堆叠显示 */
+    @media screen and (max-width: 700px) {
+      .row {
+        flex-direction: column;
+      }
+    }
+
+    /* 响应式布局 - 在屏幕设备宽度尺寸小于 400px 时, 让导航栏目上下堆叠显示 */
+    @media screen and (max-width: 400px) {
+      .navbar a {
+        float: none;
+        width: 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<div class="header"style="color:#000000">
+  <h1>HR页面</h1>
+</div>
+
+<div class="navbar">
+  <a href="#"class="right">项目信息</a>
+  <a href="#"class="right">添加项目</a>
+  <a href="#"class="right">项目评价</a>
+  <a href="#"class="right">年末评价</a>
+
+  <form action="#" method="get">
+    <div class="search">
+      <input name="wd" id="search" placeholder="请输入搜索内容">
+      <button>搜索</button>
+    </div>
+  </form>
+
+</div>
+
+<div class="row">
+  <div class="side">
+    <h2>HR息</h2>
+    <h5>HR照片:</h5>
+    <div class="fakeimg" style="height:200px;">插入图像</div>
+    <p>HR工号:</p>
+  </div>
+  <div class="main">
+    <h2>标题</h2>
+    <h5>副标题</h5>
+    <div class="fakeimg" style="height:200px;">图像</div>
+    <p>文本..</p>
+
+    <br>
+    <h2>标题</h2>
+    <h5>副标题</h5>
+    <div class="fakeimg" style="height:200px;">图像</div>
+    <p>文本..</p>
+
+  </div>
+</div>
+
+<div class="footer">
+  <h2>公司名称：  联系方法： </h2>
+</div>
+
+</body>
+</html>

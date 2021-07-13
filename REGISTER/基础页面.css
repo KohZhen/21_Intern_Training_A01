@@ -1,10 +1,10 @@
 /* CSS Document */
 
 body {
-    background: #212121;
+    background: #254441;
     font-size:22px;
     line-height: 32px;
-    color: #ffffff;
+    color: white;
     margin: 0;
     padding: 0;
     word-wrap:break-word !important;
@@ -21,8 +21,8 @@ nav {
     display: block;
     padding: 0 30px;
     float: left;
-    font-size:20px;
-    line-height: 60px;
+    font-size:50px;
+    line-height: 50px;
 }
 
 /* Since we'll have the "ul li" "float:left"
@@ -61,7 +61,7 @@ nav a {
     text-decoration:none;
 }
 
-/* Background color change on Hover 鼠标懂得地方会变色*/
+/* Background color change on Hover 鼠标动的地方会变色*/
 nav a:hover {
     background-color: black;
 }
@@ -88,6 +88,33 @@ nav ul ul li {
     position: relative;
 }
 
+
+.navbarleft a {
+    display:block;
+    padding:20px 10px;
+    color:white;
+    font-size:17px;
+    text-decoration:none;
+}
+
+.navbarleft ul{
+    list-style: none;
+}
+
+.navbarleft{
+    position: fixed;
+    background: #254441;
+    width: 200px;
+    height: 1080px;
+    float: left;
+}
+
+.navbarleft ul :hover{
+    width: 100px;
+    background: black;
+    position: relative
+}
+
 /* Change ' +' in order to change the Dropdown symbol 增加symbol来表明有子式*/
 li > a:after { content:  ' + '; }
 li > a:only-child:after { content: ''; }
@@ -100,5 +127,20 @@ li > a:only-child:after { content: ''; }
     position: fixed;
     padding: 10px 10px 0px 10px;
     bottom: 0;
+}
+
+/* 响应式布局 - 在屏幕设备宽度尺寸小于 700px 时, 让两栏上下堆叠显示 */
+@media screen and (max-width: 700px) {
+    .row {
+        flex-direction: column;
+    }
+}
+
+/* 响应式布局 - 在屏幕设备宽度尺寸小于 400px 时, 让导航栏目上下堆叠显示 */
+@media screen and (max-width: 400px) {
+    .nav {
+        float: none;
+        width: 100%;
+    }
 }
 
