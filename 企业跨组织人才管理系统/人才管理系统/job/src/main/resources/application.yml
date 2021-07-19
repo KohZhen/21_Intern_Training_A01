@@ -1,0 +1,38 @@
+spring:
+  datasource:
+    url: jdbc:mysql://localhost:3306/apply_job?useUnicode=true&characterEncoding=utf-8&serverTimezone=Asia/Shanghai&useSSL=false
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    username: root
+    password: kydy0804
+redis:
+  host: 127.0.0.7
+  port: 6379
+  database: 0
+  password:
+  lettuce:
+    pool:
+      max-active: 10
+      min-idle: 0
+      max-wait: -1ms
+      nax-idle: 8
+
+server:
+  port: 8888
+  servlet:
+    context-path: /apply_job
+
+    mybatis:
+      mapper-locations:com/puzzle/mapper/*.xml
+
+logging:
+  level:
+    com:
+      puzzle:
+        mapper: debug
+
+
+pagehelper:
+  helper-dialect: mysql
+  reasonable: true
+  supportMethodsArguments: true
+  params: count=countSql
